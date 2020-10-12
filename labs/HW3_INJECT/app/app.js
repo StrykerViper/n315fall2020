@@ -6,7 +6,7 @@ function initListeners(){
     })
 }
 function initSite(){
-    $.get("../views/nav.html", function(nav){
+    $.get("../../HW3_INJECT/views/nav.html", function(nav){
         $("#nav").html(nav);
         initListeners();
     });
