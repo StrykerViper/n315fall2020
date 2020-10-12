@@ -1,0 +1,42 @@
+body{
+    background-color: #494848;
+}
+.videoHead{
+    font-family: Montserrat;
+        font-size: 300px;
+            font-weight: 700;
+            color: #787777;
+            // margin-right: -130px;
+            text-shadow:12px 12px 20px black;
+            text-align: center;
+}
+.videoGrid{
+    // margin-left: 50px;
+    justify-content: space-around;
+    display: grid;
+  grid-gap: 100px 50px;
+  grid-template-columns: auto auto;
+//   background-color: #2196F3;
+  padding: 20px;
+  .videoItem{
+      width: 506px;
+      height: 284px;
+      background-color: blue;
+      background-image:  linear-gradient(to bottom, rgba(0,0,0,.6),rgba(0,0,0,.6)), url(../assests/images/video_Thumb_1.png);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 15px 15px 30px black;
+        .vidPlay{
+            display: flex;
+            // margin: auto;
+            justify-content: center;
+            
+            img{
+                width: 150px;
+                margin: 0 auto;
+                margin-top: 90px;
+            }
+        }
+  }
+}

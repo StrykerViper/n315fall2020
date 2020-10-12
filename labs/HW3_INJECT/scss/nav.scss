@@ -1,0 +1,22 @@
+nav{
+    height: 101px;
+    background-color: black;
+    display: flex;
+    a{
+        text-decoration: none;
+        color: white;
+        margin: auto;
+        font-family: Montserrat;
+        font-size: 25px;
+        span{
+            letter-spacing: -7px;
+            font-size: 60px;
+            font-weight: 800;
+           
+        }
+        .logo{
+            font-weight: 200 !important;
+            letter-spacing: 0px;
+        }
+    }
+}

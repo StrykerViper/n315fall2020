@@ -1,0 +1,47 @@
+.eventImage{
+    // width: 100%;
+    // height: 100%;
+    background-image:  linear-gradient(to bottom, rgba(0,0,0,.6),rgba(0,0,0,.6)), url(../assests/images/group_1.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // display: block;
+    display: flex;
+    .eventWrap{
+        margin-left: 110px;
+        margin-top: 50px;
+        width: 838px;
+        // height: 100%;
+        // background-color: orchid;
+        font-family: Montserrat;
+        color: white;
+        display: block;
+        // margin-bottom: 20px;
+        
+    .eventHead{
+        width: 838px;
+        // background-color: yellow;
+        font-size: 50px;
+        border-bottom: 3px solid white;
+        span{
+            font-size: 120px;
+            font-weight: 700;
+        }
+    }
+    .eventPara{
+        margin-top: 20px;
+        font-size: 22px;
+        color: white;
+    }
+    .eventBottom{
+        margin-top: 20px;
+        font-size: 50px;
+        width: 354px;
+        border-bottom: 3px solid white;
+    }
+    p{
+        font-size: 50px;
+        font-weight: 700;
+    }
+}
+}

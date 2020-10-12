@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 15px;
+}
+
+nav {
+  height: 101px;
+  background-color: black;
+  display: flex;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: auto;
+  font-family: Montserrat;
+  font-size: 25px;
+}
+nav a span {
+  letter-spacing: -7px;
+  font-size: 60px;
+  font-weight: 800;
+}
+nav a .logo {
+  font-weight: 200 !important;
+  letter-spacing: 0px;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+}
+#content .homeWrap {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assests/images/group_5.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#content .homeWrap .bannerInfoWrap {
+  height: 400px;
+  width: 920px;
+  margin: auto;
+}
+#content .homeWrap .bannerInfoWrap .homeInfo {
+  font-size: 150px;
+  font-family: Montserrat;
+  font-weight: 800;
+  color: white;
+}
+#content .homeWrap .bannerInfoWrap .homeInfoPara {
+  padding-left: 40px;
+  padding-right: 55px;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  height: 70px;
+  background-color: #494848;
+  display: flex;
+}
+footer p {
+  margin: auto;
+  color: white;
+}
+
+.eventImage {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assests/images/group_1.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+.eventImage .eventWrap {
+  margin-left: 110px;
+  margin-top: 50px;
+  width: 838px;
+  font-family: Montserrat;
+  color: white;
+  display: block;
+}
+.eventImage .eventWrap .eventHead {
+  width: 838px;
+  font-size: 50px;
+  border-bottom: 3px solid white;
+}
+.eventImage .eventWrap .eventHead span {
+  font-size: 120px;
+  font-weight: 700;
+}
+.eventImage .eventWrap .eventPara {
+  margin-top: 20px;
+  font-size: 22px;
+  color: white;
+}
+.eventImage .eventWrap .eventBottom {
+  margin-top: 20px;
+  font-size: 50px;
+  width: 354px;
+  border-bottom: 3px solid white;
+}
+.eventImage .eventWrap p {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.applyBackground {
+  background-color: #494848;
+  width: 100%;
+  font-family: Montserrat;
+  color: white;
+}
+.applyBackground .applyHeader {
+  font-size: 60px;
+}
+.applyBackground .applyHeader span {
+  font-size: 300px;
+  font-weight: 700;
+  color: #787777;
+  margin-right: -130px;
+  text-shadow: 12px 12px 20px black;
+}
+.applyBackground .applyBottomWrap {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+}
+.applyBackground .applyBottomWrap .form {
+  width: 760px;
+  height: 600px;
+}
+.applyBackground .applyBottomWrap .form .smallForm {
+  width: 700px;
+  height: 40px;
+  border: 3px solid white;
+  margin: 20px;
+  padding-top: 7px;
+  padding-left: 10px;
+}
+.applyBackground .applyBottomWrap .form .bigForm {
+  width: 700px;
+  height: 140px;
+  border: 3px solid white;
+  margin: 20px;
+  padding-top: 7px;
+  padding-left: 10px;
+}
+.applyBackground .applyBottomWrap .form .formBtn {
+  width: 250px;
+  height: 40px;
+  border: 3px solid white;
+  background-color: #494848;
+  color: white;
+  border-radius: 18px;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  padding-top: 8px;
+  transition: all 0.5s;
+}
+.applyBackground .applyBottomWrap .form .formBtn:hover {
+  transition: all 0.5s;
+  background-color: black;
+}
+.applyBackground .applyBottomWrap .contactWrap {
+  margin: 5px;
+  width: 300px;
+}
+.applyBackground .applyBottomWrap .contactWrap .contactInfo {
+  font-size: 30px;
+}
+.applyBackground .applyBottomWrap .contactWrap .socialWrap {
+  display: flex;
+  margin-top: 20px;
+}
+.applyBackground .applyBottomWrap .contactWrap .socialWrap .socialLogo2 {
+  width: 70px;
+  margin-top: 12px;
+}
+.applyBackground .applyBottomWrap .contactWrap .socialWrap .socialLogo {
+  width: 100px;
+  height: 100px;
+  margin-left: -20px;
+}
+
+.faqBackground {
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assests/images/group.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.faqBackground .faqHeader {
+  font-family: Montserrat;
+  font-size: 300px;
+  font-weight: 700;
+  color: #787777;
+  margin-right: -130px;
+  text-shadow: 12px 12px 20px black;
+  padding-top: -20px;
+}
+.faqBackground .faqWrap {
+  width: 100%;
+  font-family: Montserrat;
+  display: flex;
+  justify-content: space-around;
+}
+.faqBackground .faqWrap .questions {
+  width: 600px;
+  color: white;
+  font-size: 16px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.faqBackground .faqWrap .questions span {
+  font-weight: 700;
+}
+.faqBackground .faqWrap .included {
+  width: 500px;
+  font-family: Montserrat;
+  color: white;
+}
+.faqBackground .faqWrap .included .includedHead {
+  width: 440px;
+  font-size: 50px;
+  border-bottom: 3px solid white;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: #494848;
+}
+
+.videoHead {
+  font-family: Montserrat;
+  font-size: 300px;
+  font-weight: 700;
+  color: #787777;
+  text-shadow: 12px 12px 20px black;
+  text-align: center;
+}
+
+.videoGrid {
+  justify-content: space-around;
+  display: grid;
+  grid-gap: 100px 50px;
+  grid-template-columns: auto auto;
+  padding: 20px;
+}
+.videoGrid .videoItem {
+  width: 506px;
+  height: 284px;
+  background-color: blue;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assests/images/video_Thumb_1.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 15px 15px 30px black;
+}
+.videoGrid .videoItem .vidPlay {
+  display: flex;
+  justify-content: center;
+}
+.videoGrid .videoItem .vidPlay img {
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
