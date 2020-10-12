@@ -6,14 +6,14 @@ function initListeners(){
     })
 }
 function initSite(){
-    $.get("../../HW3_INJECT/views/nav.html", function(nav){
+    $.get("../HW3_INJECT/views/nav.html", function(nav){
         $("#nav").html(nav);
         initListeners();
     });
-    $.get("../views/videos.html", function(data){
+    $.get("../HW3_INJECT/views/home.html", function(data){
         $("#content").html(data);
     });
-    $.get("../views/footer.html",function(data){
+    $.get("../HW3_INJECT/views/footer.html",function(data){
         $("#footer").html(data);
     });
 }
