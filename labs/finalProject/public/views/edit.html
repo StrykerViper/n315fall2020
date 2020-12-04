@@ -1,0 +1,38 @@
+<div class="editWrap">
+    <div  class="editFormWrap">
+        <div id="editHeader" >Hey User, edit your recipe!</div>
+        <form id="editForm" class="editForm" action="">
+            <input name="img" class="input" type="text" value="${recipedata.img}">
+        <input name="name" class="input" type="text" value="${recipedata.name}">
+        <input name="desc" class="input" type="text" value="${recipedata.desc}">
+        <input name="time"  class="input" type="text" value="${recipedata.time}">
+        <input name="size" class="input" type="text" value="${recipedata.size}">
+    <!-- </div> -->
+    <div class="recipeIngredWrap">
+        <p>Enter Ingredients:</p>
+        <input name="ing1" id="ingred1" class="input" type="text" value="${recipedata.ing1}">
+        <input name="ing2" id="ingred2" class="input" type="text" value="${recipedata.ing2}">
+        <input name="ing3" id="ingred3" class="input" type="text" value="${recipedata.ing3}">
+        
+    </div>
+    <div class="inputWrap">
+        <input class="addBtn" id="addIngredients" type="button" value="+">
+    </div>
+
+    <div class="recipeInstructWrap">
+        <p>Enter Instructions:</p>
+        <input name="inst1" id="instruct1" class="input" type="text" value="${recipedata.inst1}">
+        <input name="inst2" id="instruct2" class="input" type="text" value="${recipedata.inst2}">
+        <input name="inst3" id="instruct3" class="inputWBtn" type="text" value="${recipedata.inst3}">
+       
+    </div>
+    <div class="inputWrap">
+        <input class="addBtn" id="addInstruction" type="button" value="+">
+    </div>
+    
+    <div class="editBtnWrap">
+        <input id="editRecipeBtn" class="editBtn" type="button" value="Submit Changes">
+    </div>
+        </form>
+    </div>
+</div>

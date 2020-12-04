@@ -1,0 +1,88 @@
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  color: black;
+}
+nav .logoWrap {
+  display: flex;
+  position: relative;
+  width: 167px;
+  height: 55px;
+  font-family: Caveat;
+  font-size: 25px;
+  margin-left: 50px;
+}
+nav .logoWrap .circleLeft {
+  width: 32px;
+  height: 32px;
+  background: #C7EAE4;
+  border-radius: 50%;
+  position: absolute;
+}
+nav .logoWrap .circleMiddle {
+  width: 30px;
+  height: 30px;
+  background: #FFD972;
+  border-radius: 50%;
+  position: absolute;
+  left: 22px;
+  top: 15px;
+}
+nav .logoWrap .circleMiddleRight {
+  width: 54px;
+  height: 54px;
+  background: #A7E8BD;
+  border-radius: 50%;
+  position: absolute;
+  left: 45px;
+}
+nav .logoWrap .circleRight {
+  width: 24px;
+  height: 24px;
+  background: #EFA7A7;
+  border-radius: 50%;
+  position: absolute;
+  left: 104px;
+  top: 11px;
+}
+nav .logoWrap .logoText {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+nav .linkWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+  width: 60%;
+}
+nav .linkWrap a {
+  font-size: 25px;
+  text-decoration: none;
+  font-family: Caveat;
+  color: black;
+}
+nav .linkWrap .active {
+  border-bottom: 3px solid black;
+}
+nav .linkWrap .logBtnDiv .logInBtn {
+  width: 158px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd972;
+  border-style: none;
+  border-radius: 26px;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+  font-family: Caveat;
+  font-size: 25px;
+  cursor: pointer;
+}

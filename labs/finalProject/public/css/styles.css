@@ -1,0 +1,1006 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 15px;
+}
+
+@font-face {
+  font-family: Caveat;
+  src: url(../fonts/Caveat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  color: black;
+}
+nav .logoWrap {
+  display: flex;
+  position: relative;
+  width: 167px;
+  height: 55px;
+  font-family: Caveat;
+  font-size: 25px;
+  margin-left: 50px;
+}
+nav .logoWrap .circleLeft {
+  width: 32px;
+  height: 32px;
+  background: #C7EAE4;
+  border-radius: 50%;
+  position: absolute;
+}
+nav .logoWrap .circleMiddle {
+  width: 30px;
+  height: 30px;
+  background: #FFD972;
+  border-radius: 50%;
+  position: absolute;
+  left: 22px;
+  top: 15px;
+}
+nav .logoWrap .circleMiddleRight {
+  width: 54px;
+  height: 54px;
+  background: #A7E8BD;
+  border-radius: 50%;
+  position: absolute;
+  left: 45px;
+}
+nav .logoWrap .circleRight {
+  width: 24px;
+  height: 24px;
+  background: #EFA7A7;
+  border-radius: 50%;
+  position: absolute;
+  left: 104px;
+  top: 11px;
+}
+nav .logoWrap .logoText {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+nav .linkWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+  width: 60%;
+}
+nav .linkWrap a {
+  font-size: 25px;
+  text-decoration: none;
+  font-family: Caveat;
+  color: black;
+}
+nav .linkWrap .active {
+  border-bottom: 3px solid black;
+}
+nav .linkWrap .logBtnDiv .logInBtn {
+  width: 158px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd972;
+  border-style: none;
+  border-radius: 26px;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+  font-family: Caveat;
+  font-size: 25px;
+  cursor: pointer;
+}
+nav .navicon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
+
+.navMobileView {
+  width: 400px;
+  height: 80px;
+  display: flex;
+}
+
+@media all and (max-width: 1024px) {
+  nav {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    z-index: 99;
+  }
+  nav .logoWrap {
+    margin-top: 20px;
+  }
+  nav .linkWrap {
+    background-color: white;
+    width: 35%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    margin-right: 15px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 26px;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+  }
+  nav .navicon {
+    display: flex;
+    flex-direction: column;
+    right: 30px;
+    top: 30px;
+  }
+  nav .navicon .line {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    margin: auto;
+    border-radius: 3px;
+  }
+}
+.navMobileView {
+  width: 100%;
+  height: 80%;
+  display: flex;
+}
+.navMobileView .linkMobileView {
+  display: flex;
+}
+
+.homeWrap {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(242, 92, 84, 0.6), rgba(242, 92, 84, 0.4)), url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeWrap .circleWrap {
+  display: flex;
+  position: relative;
+}
+.homeWrap .circleWrap .mainCircle {
+  width: 357px;
+  height: 357px;
+  background-color: #ffd972;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin-left: 70px;
+}
+.homeWrap .circleWrap .mainCircle .homeHeroTitle {
+  font-family: Caveat;
+  font-size: 24px;
+  font-weight: 500;
+}
+.homeWrap .circleWrap .mainCircle p {
+  font-family: lato;
+  font-size: 13px;
+  width: 168px;
+  text-align: center;
+}
+.homeWrap .circleWrap .secondaryCircle {
+  width: 167px;
+  height: 167px;
+  background-color: #fcbcb8;
+  border-radius: 50%;
+  position: relative;
+  right: 70px;
+  top: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeWrap .circleWrap .secondaryCircle p {
+  width: 105px;
+  text-align: center;
+  font-size: 10px;
+  font-family: lato;
+}
+
+@media all and (max-width: 1024px) {
+  .homeWrap .circleWrap {
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  .homeWrap .circleWrap .secondaryCircle {
+    right: 140px;
+    top: -80px;
+  }
+}
+footer {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  margin-top: -50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: lato;
+}
+
+.footerWrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerWrap .footerPara {
+  font-size: 15px;
+  font-family: lato;
+  font-style: italic;
+  margin-top: 15px;
+}
+.footerWrap .logoWrap {
+  display: flex;
+  width: 7%;
+  justify-content: space-between;
+}
+.footerWrap .logoWrap .imgWrap {
+  width: 19px;
+}
+
+.browseWrap {
+  width: 100%;
+  height: 1000px;
+  background-image: linear-gradient(to bottom, rgba(167, 232, 189, 0.8), rgba(167, 232, 189, 0.8)), url(../images//recipe-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.browseWrap .browseCenter {
+  width: 1100px;
+  height: 658px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.browseWrap .browseCenter h2 {
+  font-size: 25px;
+  font-family: Caveat;
+  font-weight: 700;
+}
+.browseWrap .browseCenter .gridWrap {
+  display: grid;
+  margin-top: 30px;
+  grid-gap: 50px 50px;
+  grid-template-columns: auto auto;
+}
+.browseWrap .browseCenter .gridWrap .gridItem {
+  width: 525px;
+  height: 263px;
+  display: flex;
+}
+.browseWrap .browseCenter .gridWrap .gridItem .itemImgDiv {
+  width: 300px;
+  height: 263px;
+  background-color: cyan;
+  border-radius: 24px;
+}
+.browseWrap .browseCenter .gridWrap .gridItem .itemImgDiv img {
+  width: 100%;
+}
+.browseWrap .browseCenter .gridWrap .gridItem .itemImgDiv .itemImg {
+  width: 300px;
+  height: 263px;
+  border-radius: 24px;
+  object-fit: cover;
+}
+.browseWrap .browseCenter .gridWrap .gridItem .itemDetailsDiv {
+  width: 224px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 24px;
+  font-family: lato;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.browseWrap .browseCenter .gridWrap .gridItem .itemDetailsDiv .detailHeader {
+  width: 141px;
+  border-bottom: 3px solid black;
+  font-size: 15px;
+  margin-bottom: 19px;
+}
+.browseWrap .browseCenter .gridWrap .gridItem .itemDetailsDiv .detailPara {
+  width: 141px;
+  font-size: 9px;
+  margin-bottom: 19px;
+}
+.browseWrap .browseCenter .gridWrap .gridItem .itemDetailsDiv .timerWrap {
+  width: 141px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 17px;
+}
+.browseWrap .browseCenter .gridWrap .gridItem .itemDetailsDiv .timerWrap .icon img {
+  width: 23px;
+}
+.browseWrap .browseCenter .gridWrap .gridItem .itemDetailsDiv .timerWrap .detail {
+  margin-left: 17px;
+  font-size: 10px;
+}
+.browseWrap .browseCenter .gridWrap .gridItem .itemDetailsDiv .servingsWrap {
+  width: 141px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.browseWrap .browseCenter .gridWrap .gridItem .itemDetailsDiv .servingsWrap .icon img {
+  width: 23px;
+}
+.browseWrap .browseCenter .gridWrap .gridItem .itemDetailsDiv .servingsWrap .detail {
+  margin-left: 17px;
+  font-size: 10px;
+}
+
+@media all and (max-width: 1024px) {
+  .browseWrap {
+    height: 1600px;
+  }
+  .browseWrap .browseCenter {
+    width: 525px;
+    height: 90%;
+    margin-top: 100px;
+  }
+  .browseWrap .browseCenter .gridWrap {
+    grid-gap: 50px;
+    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.loginWrap {
+  background-color: #FFD972;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: lato;
+}
+.loginWrap .formWrap {
+  width: 710px;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.loginWrap .formWrap .logInDiv {
+  width: 210px;
+  height: 300px;
+}
+.loginWrap .formWrap .logInDiv h1 {
+  font-size: 30px;
+  font-weight: 300;
+}
+.loginWrap .formWrap .logInDiv .loginForm {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.loginWrap .formWrap .logInDiv .loginForm .input {
+  height: 30px;
+  background: none;
+  color: black;
+  border: none;
+  border-bottom: 3px solid black;
+}
+.loginWrap .formWrap .logInDiv .loginForm .formLoginBtn {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd972;
+  border-style: none;
+  border-radius: 26px;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+  font-family: Caveat;
+  font-size: 25px;
+  cursor: pointer;
+}
+.loginWrap .formWrap .signUpDiv {
+  width: 250px;
+  height: 450px;
+  font-family: lato;
+}
+.loginWrap .formWrap .signUpDiv p {
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 1px;
+}
+.loginWrap .formWrap .signUpDiv .signUpHeader {
+  font-size: 30px;
+  font-style: normal;
+}
+.loginWrap .formWrap .signUpDiv .signUpForm {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.loginWrap .formWrap .signUpDiv .signUpForm .input {
+  height: 30px;
+  background: none;
+  color: black;
+  border: none;
+  border-bottom: 3px solid black;
+}
+.loginWrap .formWrap .signUpDiv .signUpForm .formSignUpBtn {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd972;
+  border-style: none;
+  border-radius: 26px;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+  font-family: Caveat;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1024px) {
+  .loginWrap .formWrap {
+    flex-direction: column;
+    height: 100%;
+  }
+  .loginWrap .formWrap .signUpDiv {
+    width: 210px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+}
+.createWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+.createWrap .createFormWrap {
+  width: 980px;
+}
+.createWrap .createFormWrap .createHeader {
+  font-size: 25px;
+  font-family: Caveat;
+  font-weight: 700;
+  margin-bottom: 75px;
+}
+.createWrap .createFormWrap .createForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: lato;
+}
+.createWrap .createFormWrap .createForm p {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 120px;
+}
+.createWrap .createFormWrap .createForm input {
+  height: 30px;
+  background: none;
+  color: black;
+  border: none;
+  border-bottom: 3px solid black;
+  margin-bottom: 80px;
+  font-size: 20px;
+}
+.createWrap .createFormWrap .createForm .recipeIngredWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.createWrap .createFormWrap .createForm .recipeIngredWrap input {
+  height: 30px;
+  background: none;
+  color: black;
+  border: none;
+  border-bottom: 3px solid black;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.createWrap .createFormWrap .createForm .inputWrap {
+  background-color: chartreuse;
+  position: relative;
+}
+.createWrap .createFormWrap .createForm .inputWrap .addBtn {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  background-color: #EFA7A7;
+  right: 0;
+  top: -95px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+.createWrap .createFormWrap .createForm .recipeInstructWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.createWrap .createFormWrap .createForm .recipeInstructWrap input {
+  height: 30px;
+  background: none;
+  color: black;
+  border: none;
+  border-bottom: 3px solid black;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.createWrap .createFormWrap .createForm .recipeInstructWrap .inputWrap {
+  width: 100%;
+}
+.createWrap .createFormWrap .createForm .recipeInstructWrap .inputWrap .inputWBtn {
+  width: 100%;
+  height: 30px;
+  background: none;
+  color: black;
+  border: none;
+  border-bottom: 3px solid black;
+}
+.createWrap .createFormWrap .createForm .recipeInstructWrap .inputWrap .addBtn {
+  width: 150px;
+  background-color: cadetblue;
+}
+.createWrap .createFormWrap .createForm .createBtnWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.createWrap .createFormWrap .createForm .createBtnWrap .createBtn {
+  width: 50%;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFA7A7;
+  border-style: none;
+  border-radius: 26px;
+  font-family: Caveat;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.createWrap .createFormWrap .createForm .createBtnWrap .createBtn:hover {
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+  transition: 0.3s ease-in-out;
+}
+
+@media all and (max-width: 1024px) {
+  .createWrap .createFormWrap {
+    width: 560px;
+    margin-bottom: 50px;
+    margin-top: -50px;
+  }
+  .createWrap .createFormWrap .createHeader {
+    text-align: center;
+  }
+}
+.recipeWrap {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(167, 232, 189, 0.8), rgba(167, 232, 189, 0.8)), url(../images//recipe-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.recipeWrap .recipeCenter {
+  width: 1100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.recipeWrap .recipeCenter .yourHeader {
+  font-size: 25px;
+  font-family: Caveat;
+  font-weight: 700;
+}
+.recipeWrap .recipeCenter .gridWrap {
+  display: grid;
+  margin-top: 30px;
+  grid-gap: 50px 50px;
+  grid-template-columns: auto auto;
+}
+.recipeWrap .recipeCenter .gridWrap .gridItem {
+  width: 525px;
+}
+.recipeWrap .recipeCenter .gridWrap .gridItem .itemTopWrap {
+  display: flex;
+}
+.recipeWrap .recipeCenter .gridWrap .gridItem .itemTopWrap .itemImgDiv {
+  width: 300px;
+  height: 263px;
+  background-color: white;
+  border-radius: 24px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recipeWrap .recipeCenter .gridWrap .gridItem .itemTopWrap .itemImgDiv img {
+  width: 100%;
+}
+.recipeWrap .recipeCenter .gridWrap .gridItem .itemTopWrap .itemImgDiv .itemImg {
+  width: 300px;
+  height: 263px;
+  border-radius: 24px;
+  object-fit: cover;
+}
+.recipeWrap .recipeCenter .gridWrap .gridItem .itemTopWrap .itemImgDiv .viewBtn {
+  position: absolute;
+  width: 130px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 26px;
+  background-color: #FFD972;
+  font-size: 20px;
+  font-family: caveat;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+.recipeWrap .recipeCenter .gridWrap .gridItem .itemTopWrap .itemDetailsDiv {
+  width: 224px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 24px;
+  font-family: lato;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.recipeWrap .recipeCenter .gridWrap .gridItem .itemTopWrap .itemDetailsDiv .detailHeader {
+  width: 141px;
+  border-bottom: 3px solid black;
+  font-size: 15px;
+  margin-bottom: 19px;
+}
+.recipeWrap .recipeCenter .gridWrap .gridItem .itemTopWrap .itemDetailsDiv .detailPara {
+  width: 141px;
+  font-size: 9px;
+  margin-bottom: 19px;
+}
+.recipeWrap .recipeCenter .gridWrap .gridItem .itemTopWrap .itemDetailsDiv .timerWrap {
+  width: 141px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 17px;
+}
+.recipeWrap .recipeCenter .gridWrap .gridItem .itemTopWrap .itemDetailsDiv .timerWrap .icon img {
+  width: 23px;
+}
+.recipeWrap .recipeCenter .gridWrap .gridItem .itemTopWrap .itemDetailsDiv .timerWrap .detail {
+  margin-left: 17px;
+  font-size: 10px;
+}
+.recipeWrap .recipeCenter .gridWrap .gridItem .itemTopWrap .itemDetailsDiv .servingsWrap {
+  width: 141px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recipeWrap .recipeCenter .gridWrap .gridItem .itemTopWrap .itemDetailsDiv .servingsWrap .icon img {
+  width: 23px;
+}
+.recipeWrap .recipeCenter .gridWrap .gridItem .itemTopWrap .itemDetailsDiv .servingsWrap .detail {
+  margin-left: 17px;
+  font-size: 10px;
+}
+.recipeWrap .recipeCenter .gridWrap .gridItem .btnWrap {
+  width: 300px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+.recipeWrap .recipeCenter .gridWrap .gridItem .btnWrap button {
+  width: 130px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 26px;
+  background-color: #FFD972;
+  font-size: 20px;
+  font-family: caveat;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+@media all and (max-width: 1024px) {
+  .recipeWrap .recipeCenter {
+    align-items: center;
+  }
+  .recipeWrap .recipeCenter .gridWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.detailPageWrap {
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: lato;
+}
+.detailPageWrap .detailCenter {
+  width: 1012px;
+}
+.detailPageWrap .detailCenter .descDiv {
+  position: relative;
+  display: flex;
+}
+.detailPageWrap .detailCenter .descDiv .sideTitle {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -90px;
+  top: 150px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.detailPageWrap .detailCenter .descDiv img {
+  width: 468px;
+}
+.detailPageWrap .detailCenter .descDiv .detailDiv {
+  margin-left: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.detailPageWrap .detailCenter .descDiv .detailDiv h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.detailPageWrap .detailCenter .descDiv .detailDiv p {
+  font-family: Caveat;
+  font-size: 20px;
+}
+.detailPageWrap .detailCenter .descDiv .detailDiv .detailSubTitle {
+  font-family: lato;
+  font-size: 20px;
+  font-weight: 700;
+}
+.detailPageWrap .detailCenter .ingDiv {
+  margin-top: 58px;
+}
+.detailPageWrap .detailCenter .ingDiv .ingTitle {
+  font-family: lato;
+  font-weight: 700;
+  font-size: 25px;
+}
+.detailPageWrap .detailCenter .ingDiv p {
+  font-family: Caveat;
+  font-size: 20px;
+}
+.detailPageWrap .detailCenter .instructDiv {
+  margin-top: 58px;
+}
+.detailPageWrap .detailCenter .instructDiv .instructTitle {
+  font-family: lato;
+  font-weight: 700;
+  font-size: 25px;
+}
+.detailPageWrap .detailCenter .instructDiv p {
+  font-family: Caveat;
+  font-size: 20px;
+}
+.detailPageWrap .detailCenter .editBtnWrap {
+  margin-top: 60px;
+}
+.detailPageWrap .detailCenter .editBtnWrap button {
+  width: 130px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 26px;
+  background-color: #FFD972;
+  font-size: 20px;
+  font-family: caveat;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+@media all and (max-width: 1024px) {
+  .detailPageWrap .detailCenter {
+    width: 468px;
+  }
+  .detailPageWrap .detailCenter .descDiv {
+    flex-direction: column;
+  }
+  .detailPageWrap .detailCenter .descDiv .detailDiv {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+}
+.editWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+.editWrap .editFormWrap {
+  width: 980px;
+}
+.editWrap .editFormWrap .editHeader {
+  font-size: 25px;
+  font-family: Caveat;
+  font-weight: 700;
+  margin-bottom: 75px;
+}
+.editWrap .editFormWrap .editForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: lato;
+}
+.editWrap .editFormWrap .editForm p {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 120px;
+}
+.editWrap .editFormWrap .editForm input {
+  height: 30px;
+  background: none;
+  color: black;
+  border: none;
+  border-bottom: 3px solid black;
+  margin-bottom: 80px;
+  font-size: 20px;
+}
+.editWrap .editFormWrap .editForm .recipeIngredWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.editWrap .editFormWrap .editForm .recipeIngredWrap input {
+  height: 30px;
+  background: none;
+  color: black;
+  border: none;
+  border-bottom: 3px solid black;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.editWrap .editFormWrap .editForm .inputWrap {
+  background-color: chartreuse;
+  position: relative;
+}
+.editWrap .editFormWrap .editForm .inputWrap .addBtn {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  background-color: #EFA7A7;
+  right: 0;
+  top: -95px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+.editWrap .editFormWrap .editForm .recipeInstructWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.editWrap .editFormWrap .editForm .recipeInstructWrap input {
+  height: 30px;
+  background: none;
+  color: black;
+  border: none;
+  border-bottom: 3px solid black;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.editWrap .editFormWrap .editForm .recipeInstructWrap .inputWrap {
+  width: 100%;
+}
+.editWrap .editFormWrap .editForm .recipeInstructWrap .inputWrap .inputWBtn {
+  width: 100%;
+  height: 30px;
+  background: none;
+  color: black;
+  border: none;
+  border-bottom: 3px solid black;
+}
+.editWrap .editFormWrap .editForm .recipeInstructWrap .inputWrap .addBtn {
+  width: 150px;
+  background-color: cadetblue;
+}
+.editWrap .editFormWrap .editForm .editBtnWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.editWrap .editFormWrap .editForm .editBtnWrap .editBtn {
+  width: 50%;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFA7A7;
+  border-style: none;
+  border-radius: 26px;
+  font-family: Caveat;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.editWrap .editFormWrap .editForm .editBtnWrap .editBtn:hover {
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+  transition: 0.3s ease-in-out;
+}
+
+@media all and (max-width: 1024px) {
+  .editWrap .editFormWrap {
+    width: 560px;
+    margin-bottom: 50px;
+    margin-top: -50px;
+  }
+  .editWrap .editFormWrap .editHeader {
+    text-align: center;
+  }
+}

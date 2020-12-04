@@ -1,0 +1,151 @@
+.createWrap{
+    width: 100%;
+    // background-color: cadetblue;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    .createFormWrap{
+        // background-color: chocolate;
+        width: 980px;
+        .createHeader{
+            font-size: 25px;
+            font-family: Caveat;
+            font-weight: 700;
+            margin-bottom: 75px;
+        }
+        .createForm{
+            width: 100%;
+            // background-color: darkolivegreen;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+            font-family: lato;
+
+            p{
+                font-size: 20px;
+                font-weight: 700;
+                margin-top: 120px;
+            }
+
+            input{
+                height: 30px;
+                background: none;
+                color: black;
+                border: none;
+                border-bottom: 3px solid black;
+                margin-bottom: 80px;
+                font-size: 20px;
+            }
+
+            .recipeIngredWrap{
+                // background-color: darkorchid;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                input{
+                    height: 30px;
+                    background: none;
+                    color: black;
+                    border: none;
+                    border-bottom: 3px solid black;
+                    margin-bottom: 50px;
+                    font-size: 20px;
+                }
+                
+            }
+            .inputWrap{
+                background-color: chartreuse;
+                position: relative;
+                .addBtn{
+                    width: 38px;
+                    height: 38px;
+                    position: absolute;
+                    background-color: #EFA7A7;
+                    right: 0;
+                    top: -95px;
+                    border: none;
+                    border-radius: 50%;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+            
+            .recipeInstructWrap{
+                // background-color: darkorchid;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                input{
+                    height: 30px;
+                    background: none;
+                    color: black;
+                    border: none;
+                    border-bottom: 3px solid black;
+                    margin-bottom: 50px;
+                    font-size: 20px;
+                }
+                .inputWrap{
+                    width: 100%;
+                    // background-color: darkorange;
+                    .inputWBtn{
+                        width: 100%;
+                    height: 30px;
+                    background: none;
+                    color: black;
+                    border: none;
+                    border-bottom: 3px solid black;
+                    }
+                    .addBtn{
+                        width: 150px;
+                        background-color: cadetblue;
+                    }
+                }  
+            }
+
+            .createBtnWrap{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 100px;
+                .createBtn{
+                    width: 50%;
+                    height: 52px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #EFA7A7;
+                    border-style: none;
+                    border-radius: 26px;
+                    // box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+                    font-family: Caveat;
+                    font-size: 25px;
+                    cursor: pointer;
+                    transition: .3s ease-in-out;
+                }
+                .createBtn:hover{
+                    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
+                    transition: .3s ease-in-out;
+                }
+                
+            }
+            
+        }
+    }
+}
+@media all and (max-width:1024px){
+    .createWrap{
+        // background-color: goldenrod;
+        .createFormWrap{
+            // background-color: indianred;
+            width: 560px;
+            margin-bottom: 50px;
+            margin-top: -50px;
+            .createHeader{
+                text-align: center;
+            }
+        }
+    }
+}

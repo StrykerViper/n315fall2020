@@ -1,0 +1,133 @@
+.browseWrap {
+    width: 100%;
+    height: 1000px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(167, 232, 189, 0.8),
+        rgba(167, 232, 189, 0.8)
+      ),
+      url(../images//recipe-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    .browseCenter{
+        // background-color: burlywood;
+        width: 1100px;
+        height: 658px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        h2{
+            font-size: 25px;
+            font-family: Caveat;
+            font-weight: 700;
+        }
+        .gridWrap{
+            display: grid;
+            margin-top: 30px;
+            // background-color: cadetblue;
+            grid-gap: 50px 50px;
+            grid-template-columns: auto auto;
+            .gridItem{
+                width: 525px;
+                // background-color: chartreuse;
+                height: 263px;
+                display: flex;
+                .itemImgDiv{
+                    width: 300px;
+                    height: 263px;
+                    background-color: cyan;
+                    border-radius: 24px;
+                    // object-fit: cover;
+                    img{
+                        width: 100%;
+                    }
+                    .itemImg{
+                        width: 300px;
+                        height: 263px;
+                        // width: 100%;
+                        border-radius: 24px; 
+                        object-fit: cover;
+                    }
+                }
+                .itemDetailsDiv{
+                    width: 224px;
+                    background-color: white;
+                    padding: 20px;
+                    border-radius: 24px;
+                    font-family: lato;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .detailHeader{
+                        width: 141px;
+                        border-bottom: 3px solid black;
+                        font-size: 15px;
+                        margin-bottom: 19px;
+                    }
+                    .detailPara{
+                        width: 141px;
+                        font-size: 9px;
+                        margin-bottom: 19px;
+                    }
+                    .timerWrap{
+                        width: 141px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 17px;
+                        .icon{
+                            img{
+                             width: 23px;   
+                            }
+                        }
+                        .detail{
+                            margin-left: 17px;
+                            font-size: 10px;
+                        }
+                    }
+                    .servingsWrap{
+                        width: 141px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .icon{
+                            img{
+                             width: 23px;   
+                            }
+                        }
+                        .detail{
+                            margin-left: 17px;
+                            font-size: 10px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+}
+@media all and (max-width:1024px){
+    .browseWrap{
+        height: 1600px;
+        .browseCenter{
+            width: 525px;
+            height: 90%;
+            margin-top: 100px;
+            // justify-content: center;
+            // align-items: center;
+            // background-color: turquoise;
+            .gridWrap{
+                grid-gap: 50px ;
+            grid-template-columns: auto ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+        }
+    }
+}

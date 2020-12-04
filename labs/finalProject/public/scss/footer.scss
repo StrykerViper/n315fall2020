@@ -1,0 +1,36 @@
+footer {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  margin-top: -50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: lato;
+  // flex-direction: row;
+  // background-color: cyan;
+//   margin: auto;
+}
+.footerWrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .footerPara {
+    font-size: 15px;
+    font-family: lato;
+    font-style: italic;
+    margin-top: 15px;
+  }
+  .logoWrap {
+    display: flex;
+    width: 7%;
+    justify-content: space-between;
+    .imgWrap {
+      width: 19px;
+    }
+  }
+}
